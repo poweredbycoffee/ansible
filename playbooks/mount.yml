@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: home
   vars:
     username: chris
     public_key: ~/.ssh/id_rsa.pub
