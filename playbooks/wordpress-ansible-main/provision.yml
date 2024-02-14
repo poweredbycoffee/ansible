@@ -1,0 +1,17 @@
+---
+- hosts: all
+  user: ubuntu
+  vars:
+    username: chris
+    password: $6$bOVvxfXVS4uy7uGN$9mjGg6CkpymTwM2wmCWFFbJBtAaIU7hCUQnZcEPapvcAU4nX6cz7Y6XlT71SyyIYVzt0Nz9EyJCvCXKok6bOp0
+    public_key: ~/.ssh/MacBook.pem
+  become: yes
+  roles: 
+   - common
+   - ufw
+   - user
+   - nginx
+   - php
+   - mysql
+   - wp-cli
+   - ssh
